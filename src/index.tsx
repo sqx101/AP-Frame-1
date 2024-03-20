@@ -102,7 +102,7 @@ app.frame('/mintW', (c) => {
 //
 //
 ////////////////////////////////
-app.transaction('/send-ether', (c) => {
+/*app.transaction('/send-ether', (c) => {
   const { address } = c //The address of a wallet that sends a transaction.
   return c.send({
     chainId: 'eip155:8453', //8453 is base
@@ -112,7 +112,7 @@ app.transaction('/send-ether', (c) => {
   })
 });
  
-app.transaction('/mint', (c) => {
+/*app.transaction('/mint', (c) => {
   // Assuming 'c' provides the context needed for your transaction
   const { address } = c; // This could represent the 'recipient' address for the minted tokens.
 
@@ -129,7 +129,7 @@ app.transaction('/mint', (c) => {
       //  uint256 ethValueSent,
       //  bytes calldata minterArguments
     //) external returns (ICreatorCommands.CommandSet memory commands);
-  const mintReferral = refAddress  //address
+  const mintReferral = address  //address
 
   return c.contract({
     abi: Zora1155ABI,
@@ -140,31 +140,31 @@ app.transaction('/mint', (c) => {
     // No 'value' field is necessary unless the minting function specifically requires sending Ether along with the transaction
   });
 });
-
-app.frame('/meynar', (c) => {
-  const { displayName, followerCount } = c.var.interactor || {}
-  //console.log('cast: ', c.var.cast)
-  //console.log('interactor: ', c.var.interactor)
-  return c.res({
-    image: (
-      <div
-        style={{
-          alignItems: 'center',
-          color: 'purple',
-          display: 'flex',
-          justifyContent: 'center',
-          fontSize: 48,
-          height: '100%',
-          width: '100%',
-        }}
-      >
-        Greetings {displayName}, you have {followerCount} followers.
-      </div>
-    ),
-
-    intents: [
-      <Button action="/third-frame">More Info</Button>,
-      <Button.Reset>Reset</Button.Reset>,
-    ],
-  })
-});
+*/
+//app.frame('/meynar', (c) => {
+//  const { displayName, followerCount } = c.var.interactor || {}
+//console.log('cast: ', c.var.cast)
+//console.log('interactor: ', c.var.interactor)
+//  return c.res({
+//    image: (
+//      <div
+//        style={{
+//         alignItems: 'center',
+//          color: 'purple',
+//          display: 'flex',
+//          justifyContent: 'center',
+//          fontSize: 48,
+//          height: '100%',
+//          width: '100%',
+//        }}
+//      >
+//        Greetings {displayName}, you have {followerCount} followers.
+//      </div>
+//    ),
+//
+//    intents: [
+//      <Button action="/third-frame">More Info</Button>,
+//      <Button.Reset>Reset</Button.Reset>,
+//    ],
+//  })
+//});
