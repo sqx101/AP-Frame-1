@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "frog dev"
+    "dev": "frog dev",
+    "build": "tsc"
   },
   "dependencies": {
     "@coinbase/onchainkit": "^0.10.2",
