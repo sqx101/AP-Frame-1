@@ -1,0 +1,20 @@
+{
+  "name": "3-card-monty",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "frog dev"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^0.10.2",
+    "@hono/node-server": "latest",
+    "@neynar/nodejs-sdk": "^1.12.0",
+    "chains": "^0.2.1",
+    "frog": "latest",
+    "hono": "^4",
+    "viem": "^2.8.10"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
