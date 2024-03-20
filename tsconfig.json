@@ -4,19 +4,20 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "Node",
-    "allowImportingTsExtensions": true,
+    // "allowImportingTsExtensions": true, // Remove or comment out this line.
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
+    "outDir": "./dist",
     "jsx": "react-jsx",
     "jsxImportSource": "frog/jsx",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".", // This sets the base directory for non-relative module names
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"] // This maps all imports starting with "@" to the "src" folder
+      "@/*": ["src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"]
