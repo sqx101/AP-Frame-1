@@ -1,6 +1,5 @@
-import { Button, Frog, parseEther } from 'frog'
+import { Button, Frog, } from 'frog'
 //import { neynar } from 'frog/middlewares'
-import { Zora1155ABI } from './abi/Zora1155';
 
 export const app = new Frog()
 //.use(
